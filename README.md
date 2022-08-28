@@ -1,14 +1,21 @@
 # django-casdoor-auth
 
+
+[![Version](https://img.shields.io/pypi/v/casdoor-auth.svg)](https://pypi.org/project/casdoor-auth/)
+[![PyPI - Wheel](https://img.shields.io/pypi/wheel/casdoor-auth.svg)](https://pypi.org/project/casdoor-auth/)
+[![Pyversions](https://img.shields.io/pypi/pyversions/casdoor-auth.svg)](https://pypi.org/project/casdoor-auth/)
+
 Casdoor's SDK for Django will allow you to easily connect your application to the Casdoor authentication system without having to implement it from scratch.
 
-Casdoor django SDK is simple to use. We will show you the steps below.
 ## Step1. install app
-pip is coming soon, now please install the package by git clone:
-```bash
-git clone https://github.com/casdoor/django-auth-sso.git
+
+casdoor-auth is available on PyPI:
+
+```console
+$ pip install casdoor-auth
 ```
 
+casdoor-auth is simple to use. We will show you the steps below.
 ## Step2. Config
 setting.py
 
