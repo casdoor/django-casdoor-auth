@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.1](https://github.com/casdoor/django-casdoor-auth/compare/v1.0.0...v1.0.1) (2022-08-30)
+
+
+### Bug Fixes
+
+* update README.md ([#4](https://github.com/casdoor/django-casdoor-auth/issues/4)) ([20b6c26](https://github.com/casdoor/django-casdoor-auth/commit/20b6c2647c9cd08511ef5123ea0568a76122f6be))
+
 # 1.0.0 (2022-08-30)
 
 
