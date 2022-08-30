@@ -12,8 +12,8 @@ Casdoor's SDK for Django will allow you to easily connect your application to th
 
 django-casdoor-auth is available on PyPI:
 
-```console
-$ pip install django-casdoor-auth
+```shell
+pip install django-casdoor-auth
 ```
 
 casdoor-auth is simple to use. We will show you the steps below.
