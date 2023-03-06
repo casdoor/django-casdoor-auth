@@ -43,8 +43,7 @@ def callback(request):
     user = sdk.parse_jwt_token(token)
     request.session['user'] = user
     try:
-        in_user = 
-        .objects.get(username=user.get('name'))
+        in_user = User.objects.get(username=user.get('name'))
     except:
         in_user = User.objects.create_user(user.get('name'), user.get('email'), user.get('password'))
         in_user.save()
