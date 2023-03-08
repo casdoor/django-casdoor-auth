@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.2](https://github.com/casdoor/django-casdoor-auth/compare/v1.0.1...v1.0.2) (2023-03-08)
+
+
+### Bug Fixes
+
+* get `User` through `get_user_model` ([#5](https://github.com/casdoor/django-casdoor-auth/issues/5)) ([51510b3](https://github.com/casdoor/django-casdoor-auth/commit/51510b336d0a04ec8075926fcf1856c337774a1b))
+
 ## [1.0.1](https://github.com/casdoor/django-casdoor-auth/compare/v1.0.0...v1.0.1) (2022-08-30)
 
 
