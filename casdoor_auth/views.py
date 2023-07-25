@@ -40,6 +40,8 @@ def toLogin(request):
 def callback(request):
     code = request.GET.get('code')
     token = sdk.get_oauth_token(code)
+    if isinstance(token, dict) and 'access_token' in token:
+        token = token['access_token']
     user = sdk.parse_jwt_token(token)
     request.session['user'] = user
     try:
