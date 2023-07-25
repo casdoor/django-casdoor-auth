@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/casdoor/django-casdoor-auth/compare/v1.0.2...v1.1.0) (2023-07-25)
+
+
+### Features
+
+* support new token format of token['access_token'] ([d020c8f](https://github.com/casdoor/django-casdoor-auth/commit/d020c8fc45b0637e0fffcb8236085704d6158b28))
+
 ## [1.0.2](https://github.com/casdoor/django-casdoor-auth/compare/v1.0.1...v1.0.2) (2023-03-08)
 
 
