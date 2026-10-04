@@ -1,6 +1,43 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-casdoor-auth"
+version = "0.0.0"
+authors = [{ name = "Casdoor", email = "admin@casdoor.org" }]
+description = "Django app for signing in with Casdoor"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["Casdoor", "Django", "SSO", "OAuth"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.2",
+    "Framework :: Django :: 6.0",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "django>=4.2",
+    "casdoor>=1.42.0",
+    "PyJWT>=2.0.0",
+]
+
+[project.urls]
+Home = "https://github.com/casdoor/django-casdoor-auth"
+
+[tool.setuptools.packages.find]
+include = ["casdoor_auth*"]
 
 [tool.black]
 line-length = 120
