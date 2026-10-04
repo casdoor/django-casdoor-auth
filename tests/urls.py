@@ -12,10 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from django.apps import AppConfig
+from django.contrib import admin
+from django.http import HttpResponse
+from django.urls import include, path
 
-
-class CasdoorAuth(AppConfig):
-    default_auto_field = "django.db.models.BigAutoField"
-    name = "casdoor_auth"
-    verbose_name = "Casdoor"
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("casdoor/", include("casdoor_auth.urls")),
+    path("home/", lambda request: HttpResponse(request.user.get_username())),
+]

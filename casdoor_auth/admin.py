@@ -12,25 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from casdoor_auth.views import sdk
+from django.contrib import admin
+
+from casdoor_auth.models import CasdoorUser
 
 
-def get_users(self):
-    return sdk.get_users()
-
-
-def get_user(request):
-    return sdk.get_user(request.GET.get('name'))
-
-
-def add_user(request):
-    user = request.GET.get("name")
-    return sdk.add_user(user)
-
-
-def update_user(request):
-    return sdk.add_user(request.GET.get('user'))
-
-
-def delete_user(request):
-    return sdk.delete_user(request.GET.get('name'))
+@admin.register(CasdoorUser)
+class CasdoorUserAdmin(admin.ModelAdmin):
+    list_display = ("organization", "name", "user", "casdoor_id", "created_time")
+    search_fields = ("name", "casdoor_id", "user__username")
+    readonly_fields = ("casdoor_id", "organization", "name", "created_time")

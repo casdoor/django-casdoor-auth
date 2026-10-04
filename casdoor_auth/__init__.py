@@ -13,4 +13,3 @@
 # limitations under the License.
 
 __title__ = "casdoor_auth"
-
